@@ -21,6 +21,11 @@ app.get("/get-data", async (req, res) => {
   }
 });
 
+app.get('/',(req,res)=>{
+  console.log('hello worlds')
+  res.send("baba pandit")
+})
+
 app.listen(5000, () => console.log("Server running on port 5000"));
 
 
